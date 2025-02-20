@@ -1,0 +1,22 @@
+lang: en
+
+home:
+  welcome: Hello, Chattanooga. We're glad you're here.
+  socials:
+    - url: https://www.instagram.com/chattqueerempowerment/
+      img: assets/social-icons/instagram.svg
+    - url: "mailto:howdy@chattqueerempowerment.org"
+      img: assets/social-icons/mail.svg
+  about: <b>Chattanooga Queer Empowerment Collective</b> is here to create a resilient and empowering community for queer, trans, and gender-nonconfirming individuals in Chattanooga. We are not inherently political; the only ideology we adhere to is that all people are welcome.
+
+menu_links: []
+extra_head: []
+
+# Metas plugin https://lume.land/plugins/metas/#description
+metas:
+  site: CQEC
+  description: General description of the blog
+  title: "=title"
+  image: "=image"
+  twitter: "@username"
+  lang: en

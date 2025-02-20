@@ -1,0 +1,48 @@
+.body-home {
+
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.social-link-entry {
+    width: 3em;
+    height: 3em;
+    margin: 0.25em;
+}
+.about {
+    font-size: 1.2em;
+}
+
+header {
+    position: fixed;
+    width: min(100% - 15vw, 45em);
+}
+
+header > * {
+    /* So everything is in front of bg */
+    position: relative;
+    z-index: 1;
+}
+
+.header-bg {
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    left: 0;
+    top: 0;
+    background-color: gray;
+    z-index: 0;
+}
+
+section.postList {
+    position: relative;
+    top: 100vh;
+    z-index: 3;
+}

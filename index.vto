@@ -1,0 +1,55 @@
+---
+layout: layouts/base.vto
+bodyClass: body-home
+title: Home
+---
+
+<header class="page-header">
+  <h1 class="page-title">{{ home.welcome }}</h1>
+  <ul class="social-links">
+  {{- for entry of home.socials}}
+    <li>
+      <a href="{{entry.url}}">
+        <img class="social-link-entry" src="{{entry.img}}"{{ if entry.alt }}alt="{{entry.alt}}"{{ /if }}/>
+      </a>
+    </li>
+  {{ /for }}
+  </ul>
+
+  <p class="about">{{home.about}}</p>
+  <div class="header-bg"></div>  
+</header>
+
+<section class="postList">
+  <h2 class="posts-title">Latest posts</h2>
+  {{ for post of search.pages("type=post", "date=desc", 3) }}
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title">
+        <a href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
+          {{ post.title || post.url }}
+        </a>
+      </h2>
+
+      {{ include "templates/post-details.vto" {
+        date: post.date,
+        tags: post.tags,
+        author: post.author,
+        readingInfo: post.readingInfo
+        } }}
+    </header>
+
+    <div class="post-excerpt body">
+      {{ post.excerpt |> md }}
+    </div>
+
+    <a href="{{ post.url }}" class="post-link">
+      {{ i18n.nav.continue_reading }}
+    </a>
+  </article>
+{{ /for }}
+</section>
+
+<hr>
+
+<p>{{ i18n.nav.archive }}</p>

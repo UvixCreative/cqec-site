@@ -1,0 +1,8 @@
+:root {
+    --font-family-display: Yeseva One, serif;
+    --font-family-ui: Playfair, serif;
+}
+
+[data-theme=dark] {
+/*    --color-dim: black;*/
+}
