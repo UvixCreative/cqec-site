@@ -30,7 +30,11 @@
     width: 100vw;
     height: 85vh;
     background: linear-gradient(110deg, #5470feff, #fc66c5ff);
-    color: white
+    color: white;
+
+    .container {
+	padding-top: 1em;
+    }
 }
 
 .homepage-header h1 {
