@@ -16,19 +16,31 @@
     height: 3em;
     margin: 0.25em;
 }
-.about {
+.intro-text {
     font-size: 1.2em;
+
+    b {
+	color: white;
+    }
 }
 
-header {
+.homepage-header {
     position: fixed;
     width: min(100% - 15vw, 45em);
+    width: 100vw;
+    height: 85vh;
+    background: linear-gradient(110deg, #5470feff, #fc66c5ff);
+    color: white
 }
 
-header > * {
-    /* So everything is in front of bg */
-    position: relative;
-    z-index: 1;
+.homepage-header h1 {
+    color: white;
+}
+
+.homepage-logo {
+    width: 100%;
+    padding: 1em 0;
+    max-height: 100em;
 }
 
 .header-bg {
@@ -41,8 +53,24 @@ header > * {
     z-index: 0;
 }
 
-section.postList {
+.homepage-bottom {
+    background-color: var(--color-background);
     position: relative;
-    top: 100vh;
-    z-index: 3;
+    top: 85vh;
+    z-index: 1;
+
+    img {
+	width: 100%;
+	max-height: 35em;
+	border-radius: 1em;
+    }
+
+    .section-heading {
+	font-family: Subway, serif;
+    }
+
+    ul {
+	list-style-type: "- "
+    }
 }
+

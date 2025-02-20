@@ -4,23 +4,40 @@ bodyClass: body-home
 title: Home
 ---
 
-<header class="page-header">
-  <h1 class="page-title">{{ home.welcome }}</h1>
-  <ul class="social-links">
-  {{- for entry of home.socials}}
-    <li>
-      <a href="{{entry.url}}">
-        <img class="social-link-entry" src="{{entry.img}}"{{ if entry.alt }}alt="{{entry.alt}}"{{ /if }}/>
-      </a>
-    </li>
-  {{ /for }}
-  </ul>
+<header class="homepage-header">
+  <div class="container">
+    <h1 class="page-title">{{ home.welcome }}</h1>
+    <ul class="social-links">
+    {{- for entry of home.socials}}
+      <li>
+        <a href="{{entry.url}}">
+          <img class="social-link-entry" src="{{entry.img}}"{{ if entry.alt }}alt="{{entry.alt}}"{{ /if }}/>
+        </a>
+      </li>
+    {{ /for }}
+    </ul>
 
-  <p class="about">{{home.about}}</p>
-  <div class="header-bg"></div>  
+    <p class="intro-text">{{home.intro}}</p>
+    <img alt="CQEC logo" src="assets/logo.svg" class="homepage-logo"/>
+  </div>
 </header>
 
-<section class="postList">
+<div class="homepage-bottom">
+  <section class="container">
+  {{ for sec of home.sections }}
+  <div>
+  <h2 class="section-heading">{{sec.title}}</h2>
+  <p>{{sec.content}}</p>
+  {{ if sec.img }}
+  <img src={{sec.img.src}} alt={{sec.img.alt}} />
+  {{ /if }}
+  {{ /for }}
+  
+  {{ home.mission }}
+  </div>
+  </section>
+  <hr size=100 style="margin: 1em;"/>
+  <section class="postList">
   <h2 class="posts-title">Latest posts</h2>
   {{ for post of search.pages("type=post", "date=desc", 3) }}
   <article class="post">
@@ -48,8 +65,6 @@ title: Home
     </a>
   </article>
 {{ /for }}
+  <p><i>See <a href="/blog">our blog</a> for more</i></p>
 </section>
-
-<hr>
-
-<p>{{ i18n.nav.archive }}</p>
+</div>

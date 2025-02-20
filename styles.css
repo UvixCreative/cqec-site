@@ -20,7 +20,7 @@
 }
 
 /* Page layout */
-main {
+.container, .postList {
   padding: var(--row-gap-medium) 0;
   max-width: min(100% - 15vw, 45em);
   margin: 0 auto;
