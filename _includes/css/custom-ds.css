@@ -6,3 +6,7 @@
 [data-theme=dark] {
 /*    --color-dim: black;*/
 }
+
+h2 {
+    font-family: Subway, serif;
+}
