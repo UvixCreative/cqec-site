@@ -15,11 +15,17 @@ home:
   intro: <b>Chattanooga Queer Empowerment Collective</b> is here to create a resilient and empowering community for queer, trans, and gender-nonconfirming individuals in Chattanooga. We are not inherently political; the only ideology we adhere to is that all people are welcome.
   sections:
     - title: Our mission
+      type: text
       content: Our mission is to create a resilient and empowering community for queer, trans, and gender-nonconforming individuals in the Chattanooga area by bridging the gaps between existing resources, mutual aid networks, and opportunities. Through collaboration, skill-sharing, and mutual support, we work to strengthen connections across various community efforts, ensuring that every individual has access to the tools and support they need to thrive. By fostering unity and amplifying the collective power of our community, we strive to create a space where all voices are heard, all identities are valued, and everyone can build resilience in the face of systemic challenges.
       img: {src: assets/trans_pride.jpg, alt: A photo of about 20 CQEC members at a club holding up a trans pride flag}
       test: true
     - title: What do we do?
-      content: <ul><li>Events</li><li>Mutual aid</li><li>Community building</li><li>Volunteering</li></ul>
+      type: list
+      content:
+        - Events
+        - Mutual aid
+        - Community building
+        - Volunteering
       img: {src: assets/game_night.jpg, alt: A photo of 3 people playing a board game at a game night event}      
     - title: Get involved!
       content: Check the <a href="/calendar">Calendar</a> to come to our next Community Care meeting

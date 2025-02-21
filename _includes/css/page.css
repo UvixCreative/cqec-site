@@ -4,6 +4,14 @@
   & > p:first-child {
     margin-top: 0;
   }
+
+  width: 100%;
+  background: linear-gradient(110deg, #5470feff, #fc66c5ff);
+  color: white;
+
+  h1 {
+      color: white;
+  }
 }
 
 .page-title {

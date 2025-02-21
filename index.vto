@@ -4,67 +4,75 @@ bodyClass: body-home
 title: Home
 ---
 
-<header class="homepage-header">
-    <section>
-    <h1 class="page-title">{{ home.welcome }}</h1>
-    <ul class="social-links">
-    {{- for entry of home.socials}}
-      <li>
-        <a href="{{entry.url}}">
-          <img class="social-link-entry" src="{{entry.img}}"{{ if entry.alt }}alt="{{entry.alt}}"{{ /if }}/>
-        </a>
-      </li>
-    {{ /for }}
-    </ul>
-    <p class="intro-text">{{home.intro}}</p>
-    </section>
+<header class="page-header landing-page">
+    <div class="landing-text">
+	<h1 class="page-title">{{ home.welcome }}</h1>
+	<ul class="social-links">
+	    {{- for entry of home.socials}}
+	    <li>
+		<a href="{{entry.url}}">
+		    <img class="social-link-entry" src="{{entry.img}}"{{ if entry.alt }}alt="{{entry.alt}}"{{ /if }}/>
+		</a>
+	    </li>
+	    {{ /for }}
+	</ul>
+	<p class="intro-text">{{home.intro}}</p>
+    </div>
     <img alt="CQEC logo" src="assets/logo.svg" class="homepage-logo"/>
-  </div>
+    </div>
 </header>
 
 <div class="homepage-bottom">
-  <section class="container">
-  {{ for sec of home.sections }}
-  <div>
-  <h2 class="section-heading">{{sec.title}}</h2>
-  <p>{{sec.content}}</p>
-  {{ if sec.img }}
-  <img src={{sec.img.src}} alt={{sec.img.alt}} />
-  {{ /if }}
-  {{ /for }}
-  
-  {{ home.mission }}
-  </div>
-  </section>
-  <hr size=100 style="margin: 1em;"/>
-  <section class="postList">
-  <h2 class="posts-title">Latest posts</h2>
-  {{ for post of search.pages("type=post", "date=desc", 3) }}
-  <article class="post">
-    <header class="post-header">
-      <h2 class="post-title">
-        <a href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
-          {{ post.title || post.url }}
-        </a>
-      </h2>
+    <section class="container">
+	{{ for sec of home.sections }}
+	<div>
+	    <h2 class="section-heading">{{sec.title}}</h2>
+	    {{ if sec.type == "text" || sec.type == null}}
+	    <p>{{sec.content}}</p>
+	    {{ else if sec.type == "list" }}
+	    <ul>
+		{{ for item of sec.content }}
+		<li>{{ item }}</li>
+		{{ /for }}
+	    </ul>
+	    {{ /if }}
+	    {{ if sec.img }}
+	    <img src={{sec.img.src}} alt={{sec.img.alt}} />
+	    {{ /if }}
+	    {{ /for }}
+	    
+	    {{ home.mission }}
+	</div>
+    </section>
+    <hr size=100 style="margin: 1em;"/>
+    <section class="postList container">
+	<h2 class="posts-title">Latest posts</h2>
+	{{ for post of search.pages("type=post", "date=desc", 3) }}
+	<article class="post">
+	    <header class="post-header">
+		<h2 class="post-title">
+		    <a href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
+			{{ post.title || post.url }}
+		    </a>
+		</h2>
 
-      {{ include "templates/post-details.vto" {
-        date: post.date,
-        tags: post.tags,
-        author: post.author,
-        readingInfo: post.readingInfo
-        } }}
-    </header>
+		{{ include "templates/post-details.vto" {
+		date: post.date,
+		tags: post.tags,
+		author: post.author,
+		readingInfo: post.readingInfo
+		} }}
+	    </header>
 
-    <div class="post-excerpt body">
-      {{ post.excerpt |> md }}
-    </div>
+	    <div class="post-excerpt body">
+		{{ post.excerpt |> md }}
+	    </div>
 
-    <a href="{{ post.url }}" class="post-link">
-      {{ i18n.nav.continue_reading }}
-    </a>
-  </article>
-{{ /for }}
-  <p><i>See <a href="/blog">our blog</a> for more</i></p>
-</section>
+	    <a href="{{ post.url }}" class="post-link">
+		{{ i18n.nav.continue_reading }}
+	    </a>
+	</article>
+	{{ /for }}
+	<p><i>See <a href="/blog">our blog</a> for more</i></p>
+    </section>
 </div>
