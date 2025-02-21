@@ -5,7 +5,7 @@ title: Home
 ---
 
 <header class="homepage-header">
-  <div class="container">
+    <section>
     <h1 class="page-title">{{ home.welcome }}</h1>
     <ul class="social-links">
     {{- for entry of home.socials}}
@@ -16,8 +16,8 @@ title: Home
       </li>
     {{ /for }}
     </ul>
-
     <p class="intro-text">{{home.intro}}</p>
+    </section>
     <img alt="CQEC logo" src="assets/logo.svg" class="homepage-logo"/>
   </div>
 </header>

@@ -1,7 +1,12 @@
 lang: en
 
+it:
+  logo: <img src="assets/logo.svg"/>
+
 home:
-  welcome: Hello, Chattanooga. We're glad you're here.
+  welcome: |
+    Hello, Chattanooga.<br/>
+    We're glad you're here.
   socials:
     - url: https://www.instagram.com/chattqueerempowerment/
       img: assets/social-icons/instagram.svg
