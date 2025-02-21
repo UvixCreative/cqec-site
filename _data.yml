@@ -31,13 +31,16 @@ home:
       content: Check the <a href="/calendar">Calendar</a> to come to our next Community Care meeting
       img: {src: assets/group_photo.jpg, alt: A photo of about 40 CQEC members in a group meeting space}      
 
+calendar:
+  url: https://calendar.google.com/calendar/u/0/embed?src=c_a206fc836c52c48829e202c940d051a2893f46b224f40b4ded9c82b435cdef82@group.calendar.google.com&ctz=America/New_York
+
 menu_links: []
 extra_head: []
 
 # Metas plugin https://lume.land/plugins/metas/#description
 metas:
   site: CQEC
-  description: General description of the blog
+  description: Chattanooga Queer Empowerment Collective is connecting empowering the queer community in the Tennessee Valley
   title: "=title"
   image: "=image"
   twitter: "@username"

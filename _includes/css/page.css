@@ -6,7 +6,7 @@
   }
 
   width: 100%;
-  background: linear-gradient(110deg, #5470feff, #fc66c5ff);
+  background: var(--cqec-gradient);
   color: white;
 
   h1 {

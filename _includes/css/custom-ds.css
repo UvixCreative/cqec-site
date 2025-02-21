@@ -1,6 +1,7 @@
 :root {
     --font-family-display: Yeseva One, serif;
     --font-family-ui: Playfair, serif;
+    --cqec-gradient: linear-gradient(110deg, #5470feff, #fc66c5ff);
 }
 
 [data-theme=dark] {

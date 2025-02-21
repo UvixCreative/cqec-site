@@ -15,22 +15,28 @@
 
 /* Make the links black */
 :root {
-  --color-link: var(--color-base);
-  --color-link-hover: var(--color-dim);
+    --color-link: var(--color-base);
+    --color-link-hover: var(--color-dim);
 }
 
 /* Page layout */
 .container {
-  padding: var(--row-gap-small) 0;
-  max-width: min(100% - 15vw, 45em);
-  margin: 0 auto;
+    padding: var(--row-gap-small) 0;
+    max-width: min(100% - 15vw, 45em);
+    margin: 0 auto;
 
-  & > :first-child {
-    margin-top: 0;
-  }
+    & > :first-child {
+	margin-top: 0;
+    }
 }
 
 /* Search tweak */
 .search {
-  margin-top: var(--row-gap-xsmall);
+    margin-top: var(--row-gap-xsmall);
+}
+
+.gradient-text {
+    background: var(--cqec-gradient);
+    background-clip: text;
+    color: transparent;
 }

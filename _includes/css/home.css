@@ -60,5 +60,10 @@
     ul {
 	list-style-type: "\27A1   "
     }
+
+    h2 {
+	font-size: 2em;
+	margin: 0.5em 0;
+    }
 }
 
