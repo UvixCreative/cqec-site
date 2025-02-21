@@ -11,6 +11,11 @@ home:
       img: assets/social-icons/instagram.svg
     - url: "mailto:howdy@chattqueerempowerment.org"
       img: assets/social-icons/mail.svg
+  importantlinks:
+    - title: TDOV registration
+      url: https://docs.google.com/forms/d/17VfS_bHGUxJuGjYwvYyQVDNh7ODG06YUjOOxvp93sJA/edit
+    - title: Community Vision survey
+      url: https://docs.google.com/forms/d/e/1FAIpQLSeNBoVE9IAqrKdfhcVpj22F4OWjunsw7QB4JWYLEOKxHML_wg/viewform
   intro: <b>Chattanooga Queer Empowerment Collective</b> is here to create a resilient and empowering community for queer, trans, and gender-nonconfirming individuals in Chattanooga. We are not inherently political; the only ideology we adhere to is that all people are welcome.
   sections:
     - title: Our mission

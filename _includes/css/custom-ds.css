@@ -1,4 +1,6 @@
 :root {
+    --color-accent-light: #eda0f1;
+    --color-accent-dark: #2e162f;
     --color-navbar: #eda0f1;
     --color-footer: #2e162f;
     --font-family-display: Yeseva One, serif;

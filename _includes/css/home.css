@@ -22,7 +22,7 @@
 
 .landing-page {
     position: fixed;
-    top: 9ch;
+    top: 8.5ch;
     height: 85vh;
 
     display: flex;
@@ -45,7 +45,7 @@
 .homepage-bottom {
     background-color: var(--color-background);
     position: relative;
-    margin-top: calc(85vh + 9ch);
+    margin-top: calc(85vh + 8.5ch);
     z-index: 1;
 
     img {
@@ -64,3 +64,17 @@
     }
 }
 
+.important-links {
+    width: 100%;
+    background-color: var(--color-accent-light);
+    color: white;
+    a {
+	color: white;
+    }
+    h1 {
+	color: white;
+    }
+    li {
+	font-size: 1.2em;
+    }
+}

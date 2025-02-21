@@ -4,7 +4,7 @@ bodyClass: body-home
 title: Home
 sitemap:
   visible: true
-  order: 0
+  order: 1
 ---
 
 <header class="page-header landing-page">
@@ -26,6 +26,17 @@ sitemap:
 </header>
 
 <div class="homepage-bottom">
+    <div class="important-links">
+	<div class="container">
+	    <h1 class="section-heading">Important links</h1>
+	    <ul>
+		{{ for link of home.importantlinks }}
+		<li><b><a href={{link.url}}>{{ link.title }}</a></b></li>
+		{{ /for }}
+	    </ul>
+	</div>
+    </div>
+    
     <section class="container">
 	<h1 class="page-title gradient-text">Who we are</h1>
 	{{ for sec of home.sections }}
