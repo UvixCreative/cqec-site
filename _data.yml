@@ -1,7 +1,6 @@
 lang: en
 
-it:
-  logo: <img src="assets/logo.svg"/>
+logo: <img src="/assets/logo-icon.svg"/>
 
 home:
   welcome: |
@@ -33,6 +32,31 @@ home:
 
 calendar:
   url: https://calendar.google.com/calendar/u/0/embed?src=c_a206fc836c52c48829e202c940d051a2893f46b224f40b4ded9c82b435cdef82@group.calendar.google.com&ctz=America/New_York
+
+values:
+  - title: Participate at your leisure
+    extra: Your participation is welcomed but should never be forced.
+  - title: Ask questions
+    extra: Space is provided to ask questions. Please be considerate and thoughtful when doing so.
+  - title: Speak your truth using “I” statements
+    extra: Speak for yourself, not for others.
+  - title: Right to pass
+    extra: If a question is asked, you have the right to not answer.
+  - title: Exercise empathy, generosity, grace, and humility
+    extra: Let's aim to make it easy for everyone to feel comfortable sharing.
+  - title: Be open to different people, viewpoints, and experiences
+    extra: Embrace diversity and find value in differing perspectives.
+  - title: Remember your power and privilege
+    extra: Bring awareness to how your position may impact the conversation.
+  - title: Explore your discomfort
+    extra: Lean into challenging topics and conversations to help us grow together.
+  - title: Call people in, not out
+    extra: Engage in conversation with an invitation, not a demand.
+  - title: Stories stay, lessons leave
+    extra: Keep what’s shared in this space in mind as lessons to carry forward, without judgment.
+  - title: Take space, make space
+    extra: Ensure everyone has an opportunity to share and contribute.
+
 
 menu_links: []
 extra_head: []

@@ -1,0 +1,9 @@
+.calendar.embed-container {
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+
+    & > * {
+	border-radius: 2em;
+    }
+}

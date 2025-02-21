@@ -3,8 +3,12 @@ layout: layouts/base.vto
 bodyClass: body-tag
 ---
 <header class="page-header">
+<div class="container"
   <p><a href="/archive/">{{ i18n.nav.back }}</a></p>
   <h1 class="page-title">{{ title }}</h1>
+  </div>
 </header>
 
+<div class="container">
 {{ include "templates/post-list.vto" { postslist: search.pages(search_query) } }}
+</div>

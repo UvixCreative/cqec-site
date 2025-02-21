@@ -1,11 +1,16 @@
 :root {
+    --color-navbar: #eda0f1;
+    --color-footer: #2e162f;
     --font-family-display: Yeseva One, serif;
     --font-family-ui: Playfair, serif;
     --cqec-gradient: linear-gradient(110deg, #5470feff, #fc66c5ff);
+    --transition-quick: 0.1s;
+    --transition-med: 0.3s;
+    --transition-long: 1s;
 }
 
 [data-theme=dark] {
-/*    --color-dim: black;*/
+    --color-navbar: #2e162f;
 }
 
 h2 {

@@ -19,8 +19,8 @@
     {{ it.extra_head?.join("\n") }}
   </head>
   <body>
-    <nav class="navbar">
-      <a href="/" class="navbar-home">
+    <nav class="top-navbar">
+      <a href="/" class="top-navbar-home">
         {{ if it.logo }}
           {{ it.logo }}
         {{ else }}
@@ -28,7 +28,7 @@
         {{ /if }}
       </a>
 
-      <ul class="navbar-links">
+      <ul class="top-navbar-links">
       {{- for entry of search.pages("menu.visible=true", "menu.order") }}
         <li>
           <a href="{{ entry.url }}"{{ if entry.url == url }} aria-current="page"{{ /if }}>
@@ -67,5 +67,13 @@
     </main>
 
     <!-- Current page: {{ url }} -->
+    <nav class="footer-nav">
+      <a href="/" class="navbar-home"><img src="/assets/logo.svg" /></a>
+      <ul class="top-navbar-links">
+      {{ for entry of search.pages("type!=post type!=tag type!=author", "sitemap.order") }}
+      <li><a href="{{entry.url}}">{{ entry.title }}</a></li>
+      {{ /for }}
+      </ul>
+    </nav>
   </body>
 </html>

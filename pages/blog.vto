@@ -5,7 +5,9 @@ title: Blog
 url: /blog/
 menu:
   visible: true
-  order: 1
+  order: 0
+sitemap:
+  visible: true
 ---
 
 <header class="page-header">
@@ -43,8 +45,7 @@ menu:
 	</a>
     </article>
     {{ /for }}
+    <hr>
+    <p>{{ i18n.nav.archive }}</p>
+
 </section>
-
-<hr>
-
-<p>{{ i18n.nav.archive }}</p>

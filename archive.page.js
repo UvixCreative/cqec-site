@@ -12,6 +12,9 @@ export default function* ({ search, paginate, i18n }) {
         visible: false,
         order: 1,
       };
+       data.sitemap = {
+	   visible: true,
+       };
     }
 
     yield {

@@ -2,6 +2,9 @@
 layout: layouts/base.vto
 bodyClass: body-home
 title: Home
+sitemap:
+  visible: true
+  order: 0
 ---
 
 <header class="page-header landing-page">
@@ -24,6 +27,7 @@ title: Home
 
 <div class="homepage-bottom">
     <section class="container">
+	<h1 class="page-title gradient-text">Who we are</h1>
 	{{ for sec of home.sections }}
 	<div>
 	    <h2 class="section-heading">{{sec.title}}</h2>

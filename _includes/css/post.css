@@ -17,8 +17,9 @@
     top: 0.2em;
     height: 1.2em;
     width: 0.2ch;
+    margin-right: 0.2em;
     background: var(--cqec-gradient);
-    transition: 0.3s;
+    transition: var(--transition-med);
 }
 
 .post-title:hover::before {

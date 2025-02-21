@@ -9,6 +9,7 @@
 @import "css/post.css";
 @import "css/comments.css";
 @import "css/home.css";
+@import "css/calendar.css";
 
 /* Font */
 @import "css/custom_fonts.css";
@@ -39,4 +40,16 @@
     background: var(--cqec-gradient);
     background-clip: text;
     color: transparent;
+}
+
+.principle-block {
+    margin: 3em auto;
+
+    h2 {
+	color: var(--color-base);
+    }
+
+    p {
+	color: var(--color-dim);
+    }
 }
