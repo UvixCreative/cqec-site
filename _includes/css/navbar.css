@@ -56,14 +56,16 @@ body {
 
 nav.footer-nav {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     background-color: var(--color-footer);
     height: 15ch;
+    max-height: 15vh;
     display: flex;
     justify-content: space-between;
 
     .navbar-home > img {
 	height: 100%;
+	max-width: 40vw;
     }
 
     a {
