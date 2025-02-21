@@ -14,6 +14,7 @@ export default function* ({ search, paginate, i18n }) {
       };
        data.sitemap = {
 	   visible: true,
+	   order: 10
        };
     }
 

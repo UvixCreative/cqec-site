@@ -65,7 +65,7 @@ nav.footer-nav {
 
     .navbar-home > img {
 	height: 100%;
-	max-width: 40vw;
+	max-width: 30vw;
     }
 
     a {
@@ -74,7 +74,7 @@ nav.footer-nav {
 }
 
 nav.footer-nav > * {
-    padding: 1.5em;
+    padding: 1em;
 }
 
 nav.footer-nav::before {
