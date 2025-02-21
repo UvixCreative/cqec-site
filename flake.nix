@@ -19,12 +19,12 @@
       apps = forEachSupportedSystem ({ pkgs }: {
         default = let
           serv = pkgs.writeShellApplication {
-            name = "serve";
+            name = "build";
             runtimeInputs = [pkgs.deno];
-            text = "deno task serve";
+            text = "deno task lume";
           };
         in {
-          program = "${serv}/bin/serve";
+          program = "${serv}/bin/build";
           type = "app";
         };
       });
