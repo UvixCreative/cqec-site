@@ -3,7 +3,6 @@ title: Drag bingo
 date: '2025-02-21'
 author: CQEC
 tags:
-  - Announcement
   - Events
   - Trans
   - Fundraiser
