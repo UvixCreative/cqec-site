@@ -49,10 +49,3 @@ sections:
     img:
       src: assets/group_photo.jpg
       alt: A photo of about 40 CQEC members in a group meeting space
-  - title: A new thing real quick
-    type: text
-    content: This is a new section that we added really easily!
-    img:
-      src: >-
-        https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.natgeofe.com%2Fn%2F1af06388-8cd1-4a31-ada3-03d8dbc8793a%2Fmeerkat_thumb.jpg%3Fw%3D1200&f=1&nofb=1&ipt=60b191f219be3637e9d86effcca2351ad7e8113bfa28368e97e2840057987872&ipo=images
-      alt: a meerkat
