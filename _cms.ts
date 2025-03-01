@@ -52,7 +52,7 @@ cms.document(
       description: "Links to highlight in the 'important links' section",
       fields: [
         "title:text",
-	"url:text",
+	"url:url",
       ]
     },
     {
@@ -62,6 +62,25 @@ cms.document(
       fields: [
         "url:url",
 	"img:text",
+      ],
+    },
+    "intro:text",
+    {
+      name: "sections",
+      type: "object-list",
+      description: "Sections of text under the landing page",
+      fields: [
+        "title:text",
+	"type:text",
+	"content:text",
+	{
+	  name: "img",
+	  type: "object",
+	  fields: [
+	    "src:text",
+	    "alt:text",
+	  ],
+	},
       ],
     },
   ]
