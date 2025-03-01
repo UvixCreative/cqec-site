@@ -46,7 +46,7 @@ sitemap:
 	    <p>{{sec.content}}</p>
 	    {{ else if sec.type == "list" }}
 	    <ul>
-		{{ for item of sec.content }}
+		{{ for item of sec.content.split(",") }}
 		<li>{{ item }}</li>
 		{{ /for }}
 	    </ul>
