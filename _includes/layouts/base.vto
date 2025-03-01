@@ -71,7 +71,7 @@
       <a href="/" class="navbar-home"><img src="/assets/logo.svg" /></a>
       <ul class="top-navbar-links">
       {{ for entry of search.pages("type!=post type!=tag type!=author", "sitemap.order") }}
-      <li><a href="{{entry.url}}">{{ entry.title }}</a></li>
+      <li><a href="{{entry.url}}">{{ entry.sitemap.title || entry.title }}</a></li>
       {{ /for }}
       </ul>
     </nav>
