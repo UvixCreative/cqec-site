@@ -15,6 +15,3 @@ metas:
   image: =image
   lang: en
   generator: false
-importantlinks:
-  - title: test
-    url: 'https://google.com'
