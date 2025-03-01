@@ -12,11 +12,10 @@ importantlinks:
     url: >-
       https://docs.google.com/forms/d/e/1FAIpQLSeNBoVE9IAqrKdfhcVpj22F4OWjunsw7QB4JWYLEOKxHML_wg/viewform
 intro: >-
-  <b>Chattanooga Queer Empowerment Collective</b> is here to create a
-  resilient and empowering community for queer, trans, and
-  gender-nonconfirming individuals in Chattanooga. We are not inherently
-  political; the only ideology we adhere to is that all people are welcome.
-
+  <b>Chattanooga Queer Empowerment Collective</b> is here to create a resilient
+  and empowering community for queer, trans, and gender-nonconfirming
+  individuals in Chattanooga. We are not inherently political; the only ideology
+  we adhere to is that all people are welcome.
 sections:
   - title: Our mission
     type: text
@@ -27,22 +26,16 @@ sections:
       opportunities. Through collaboration, skill-sharing, and mutual support,
       we work to strengthen connections across various community efforts,
       ensuring that every individual has access to the tools and support they
-      need to thrive. By fostering unity and amplifying the collective power
-      of our community, we strive to create a space where all voices are
-      heard, all identities are valued, and everyone can build resilience in
-      the face of systemic challenges.
+      need to thrive. By fostering unity and amplifying the collective power of
+      our community, we strive to create a space where all voices are heard, all
+      identities are valued, and everyone can build resilience in the face of
+      systemic challenges.
     img:
       src: assets/trans_pride.jpg
-      alt: >-
-        A photo of about 20 CQEC members at a club holding up a trans pride
-        flag
+      alt: A photo of about 20 CQEC members at a club holding up a trans pride flag
   - title: What do we do?
     type: list
-    content:
-      - Events
-      - Mutual aid
-      - Community building
-      - Volunteering
+    content: 'Events,Mutual aid,Community building,Volunteering'
     img:
       src: assets/game_night.jpg
       alt: A photo of 3 people playing a board game at a game night event
@@ -53,3 +46,10 @@ sections:
     img:
       src: assets/group_photo.jpg
       alt: A photo of about 40 CQEC members in a group meeting space
+  - title: A new thing real quick
+    type: text
+    content: This is a new section that we added really easily!
+    img:
+      src: >-
+        https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.natgeofe.com%2Fn%2F1af06388-8cd1-4a31-ada3-03d8dbc8793a%2Fmeerkat_thumb.jpg%3Fw%3D1200&f=1&nofb=1&ipt=60b191f219be3637e9d86effcca2351ad7e8113bfa28368e97e2840057987872&ipo=images
+      alt: a meerkat
