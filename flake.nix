@@ -27,6 +27,16 @@
           program = "${serv}/bin/build";
           type = "app";
         };
+        cms = let 
+          serv = pkgs.writeShellApplication {
+            name = "cms";
+            runtimeInputs = [pkgs.deno];
+            text = "deno task lume cms";
+          };
+        in {
+          program = "${serv}/bin/cms";
+          type = "app";
+        };
       });
     };
 }
